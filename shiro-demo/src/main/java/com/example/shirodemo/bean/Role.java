@@ -1,7 +1,6 @@
 package com.example.shirodemo.bean;
 
 import java.io.Serializable;
-import java.util.Date;
 import lombok.Data;
 
 /**
@@ -10,31 +9,21 @@ import lombok.Data;
  */
 
 @Data
-public class User implements Serializable {
+public class Role implements Serializable {
     /**
      * id
      */
     private Integer id;
 
     /**
-     * userName
+     * name
      */
-    private String userName;
+    private String name;
 
     /**
-     * password
+     * memo
      */
-    private String password;
-
-    /**
-     * createTime
-     */
-    private Date createTime;
-
-    /**
-     * Status
-     */
-    private String status;
+    private String memo;
 
     private static final long serialVersionUID = 1L;
 }
